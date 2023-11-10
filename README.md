@@ -1,7 +1,8 @@
 # NFTs-Landing-Page
 
 **Overview**
-This is a web project landing page to show front-end skills.
+
+This is a web project landing page about NFTs developed with raw HTML and CSS to show and practice my front-end skills.
 
 *Deploy Status:*
 

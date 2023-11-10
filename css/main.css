@@ -2,6 +2,7 @@
 
 :root{
     --body-background: #0e0e0e;
+    --main-content-color: #1E1E1E;
     --color-logo: #ff5b50;
     --card-color: #252525;
     --text-color: #fff;
@@ -14,4 +15,84 @@
 
 body{
     font-family: var(--main-font);
+
+}
+
+div.main__content{
+    padding:0;
+    background: var(--body-background) url('../assets/background.png') no-repeat center;
+    width: 100vw;
+    height: 100vh;
+}
+
+header.header__content{
+    display: grid;
+    position: relative;
+    padding: 2rem;
+    width: 100%;
+    background-color: red;
+}
+
+div.header__content__logo h1{
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+div.header__content__logo h1 span{
+    color: var(--color-logo);
+}
+
+div.header__content__links{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 8rem;
+    margin-top: 1rem;
+    margin-right: 3rem;
+    opacity: 0;  
+    pointer-events: none; 
+    cursor: default;  
+}
+
+div.header__content__links ul li {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+div.header__content__links ul li a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+div.header__content__button {
+    margin-top: 1.7rem;
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    background-color: var(--text-color);
+    padding: 0.6rem;
+    width: 70%;
+    justify-self: center;
+    
+}
+
+div.header__content__button img {
+    width: 24px;
+}
+
+div.header__content__button p{
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.2rem;
+
+}
+
+.header__content_button_menu img{
+    position: absolute;
+    padding: 0.5rem;
+    top: 0;
+    right: 0;
 }
